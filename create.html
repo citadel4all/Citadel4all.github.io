@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your books on Fiction Hub.">
+  <title>Create - Fiction Hub</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global-styles.css">
+  <link rel="stylesheet" href="css/create-styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</head>
+<body>
+  <header class="header"></header>
+
+  <main>   
+    <section class="add-book">
+      <h1>Create a Book</h1>
+      <div id="message" class="message"></div>
+      <form id="add-book-form">
+        <label for="title">Book Title</label>
+        <input type="text" id="title" placeholder="Enter book title" required>
+        <label for="author">Author</label>
+        <input type="text" id="author" placeholder="Enter author name" required>
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" placeholder="Enter genre" required>
+        <label for="summary">Summary</label>
+        <textarea id="summary" placeholder="Start writing your story here..."></textarea>
+
+        <label for="bookImage">Book Image</label>
+        <input type="file" id="bookImage" accept="image/*">
+
+        <div id="chapter-inputs">
+          <div class="chapter-input" data-chapter-id="1">
+            <label for="chapter-title-1">Chapter Title</label>
+            <input type="text" id="chapter-title-1" placeholder="Enter chapter title" required>
+            <label for="chapter-content-1">Chapter Content</label>
+            <textarea id="chapter-content-1" placeholder="Enter chapter content" required></textarea>
+            <button type="button" class="delete-chapter-button" data-chapter-id="1">Delete</button>
+          </div>
+        </div>
+
+        <button type="button" id="add-chapter-button">Add Chapter</button>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script> <script src="js/firebase-initializer.js"></script>
+  <script src="js/create.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/mobile-nav-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read books seamlessly on Fiction Hub.">
+  <title>Reader - Fiction Hub</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global-styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/reader-styles.css">
+</head>
+<body>
+  <header class="header"></header>
+
+  <main>
+    <section class="reader">
+      <div class="settings-bar">
+        <label for="font-size">Font Size:</label>
+        <input type="range" id="font-size" min="12" max="24" value="16">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="sepia">Sepia</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+
+      <div class="reader-content">
+        <!-- Dynamic book content goes here -->
+        <div id="loading-indicator">
+          <div class="spinner"></div>
+        </div>
+        <div id="error-message" class="error"></div>
+        <h1 id="bookTitle"></h1>
+        <p id="bookAuthor"></p>
+        <p id="bookGenre"></p>
+        <p id="bookSummary"></p>
+        <div id="chapter-list">
+          <!-- Chapter navigation will be added here -->
+        </div>
+        <div id="chapter-content">
+          <!-- Chapter content will be displayed here -->
+        </div>
+      </div>
+
+      <div class="chapter-navigation">
+        <button id="prev-chapter">Previous</button>
+        <select id="chapter-select">
+          <!-- Chapter options populated dynamically -->
+        </select>
+        <button id="next-chapter">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="js/firebase-initializer.js"></script>
+  <script src="js/reader.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/mobile-nav-toggle.js"></script>
+</body>
+</html>

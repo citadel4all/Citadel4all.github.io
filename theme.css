@@ -1,0 +1,28 @@
+body.light, .reader.light {
+  background-color: var(--light-theme-background);
+  color: var(--light-theme-text);
+}
+
+body.sepia, .reader.sepia {
+  background-color: var(--sepia-theme-background);
+  color: var(--sepia-theme-text);
+}
+
+body.dark, .reader.dark {
+  background-color: var(--dark-theme-background);
+  color: var(--dark-theme-text);
+}
+
+.chapterListItem.light {
+	background-color: var(--light-theme-background-2);
+    color: var(--light-theme-text);
+	}
+.chapterListItem.dark {
+	background-color: var(--light-theme-background);
+	color: var(--light-theme-text);
+	}
+
+.chapterListItem.sepia {
+	background-color: var(--sepia-theme-text); 
+    color: var(--sepia-theme-background);
+	}

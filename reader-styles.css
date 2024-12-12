@@ -1,0 +1,78 @@
+.reader {
+  padding: 2rem;
+  max-width: 700px;
+  min-height: 90vh;
+  margin: 0 auto;
+  color: inherit;
+  background: var(--background-color);
+}
+
+.reader-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.reader-controls button {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reader-controls button:hover {
+  background: rgba(74, 144, 226, 0.8);
+}
+
+#loading-indicator {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.spinner {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  border-top-color: #3498db; /* Adjust color as needed */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.reader-content {
+  text-align: left;
+  line-height: 1.8;
+  color: inherit;
+}
+
+#chapter-list {
+  margin-top: 20px;
+}
+
+#chapter-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#chapter-list li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+#chapter-content {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+/* Global Styles */
+:root {
+  --primary-color: #4a90e2; /* Blue */
+  --secondary-color: #f4f4f4; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --background-color: #fff; /* White */
+  --font-family: 'Arial, sans-serif';
+  --light-theme-background: #fff;
+  --light-theme-background-2: #f0f0f0;
+  --light-theme-text: #333;
+  --sepia-theme-background: #f5f5dc;
+  --sepia-theme-text: #663300;
+  --dark-theme-background: #222;
+  --dark-theme-text: #eee;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edit and create captivating stories on Fiction Hub's seamless book editor.">
+  <meta name="keywords" content="Fiction Hub, book editor, write stories, edit books, online library">
+  <meta name="author" content="Fiction Hub Team">
+  <title>Editor - Fiction Hub</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global-styles.css">
+  <link rel="stylesheet" href="css/editor-styles.css">
+</head>
+<body>
+	<!-- Header Section -->
+  <header class="header"></header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="editor">
+      <h2>Edit Book</h2>
+      <form id="edit-book-form">
+        <label for="title">Book Title</label>
+        <input type="text" id="title" placeholder="Enter book title" required>
+        <label for="author">Author</label>
+        <input type="text" id="author" placeholder="Enter author name" required>
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" placeholder="Enter genre" required>
+        <label for="summary">Summary</label>
+        <textarea id="summary" placeholder="Start writing your story here..."></textarea>
+
+        <label for="bookImage">Book Image</label>
+        <input type="file" id="bookImage" accept="image/*">
+        <div id="imagePreview">
+          <img id="currentBookImage" src="" alt="Book Image">
+        </div>
+
+        <div id="chapter-inputs">
+          </div>
+
+        <button type="button" id="add-chapter-button">Add Chapter</button>
+        <button type="submit">Save Changes</button>
+      </form>  
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer"></footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="js/firebase-initializer.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/mobile-nav-toggle.js"></script>
+</body>
+</html>
